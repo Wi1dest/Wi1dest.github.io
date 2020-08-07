@@ -414,30 +414,31 @@
 
 
 
-
+  <div id="giteement-ctn"></div>
   
-  <div id="gitment-ctn"></div>
-  
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/lib/gitment.css">
-    <script src="/lib/gitment.js"></script>
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
   
   <script>
-    <!-- id: "测试" -->
-    var gitment = new Gitment({
-      id: "20200806195109",
-      owner: 'Wi1dest',
-      repo: 'https://github.com/Wi1dest/hexo_repository',
-      oauth: {
-        client_id: '17678636bd2b1f564fc7',
-        client_secret: 'd3c5dda27193e3911018d97f177b4ca696cd315d',
-      },
-    })
-    gitment.render('gitment-ctn')
+  <!-- id: "测试" -->
+  var giteement = new Giteement({
+    id: '20200806195109',
+    owner: 'wi1dest',
+    repo: 'https://gitee.com/wi1dest/hexo_repository',
+    backcall_uri: 'https://wi1dest.github.io/',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '825afb23ea43fc261e32995f804d868073a5846883ea8e070f64ec0fb664f6fd',
+      client_secret: 'cbdc3c0fc8cbe6fa87398a0300e1605231d1fad9ef80048898e20a041763f7bc'
+    },
+  })
+  giteement.render('giteement-ctn')
   </script>
 
 
-  
+
+
+
 
 
 
